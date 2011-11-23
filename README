@@ -1,0 +1,15 @@
+A rudimentary platform-independent program loader and
+compatibility layer.
+
+You can try it out by building and then using loader on the demo program:
+
+    sh build.sh
+    ./load demo.prog
+
+It's not implicitly clear what this project attempts to do, so I'll explain
+a bit. Whenever need arises, we'll design bunch of interfaces that work
+across systems. Others will write their programs into containers that we
+have designed. Later anyone can download anyone other's program and get it work
+on their platform directly with no dependency- or software-originated compatibility issues.
+
+Well.. that's the plan. Please submit some issues or patches.
