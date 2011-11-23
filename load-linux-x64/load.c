@@ -11,11 +11,8 @@
 
 #include <sys/mman.h>
 
-void* icicle_require(char* name){
-    printf("require called\n");
-    printf("requires (%s)\n", name);
-}
- 
+void* icicle_require(char* name);
+
 int main(int argc, char* argv[]){
     char* progname;
     int fd;

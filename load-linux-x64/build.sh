@@ -3,4 +3,6 @@ CFLAGS="
     -I../include/
 "
 
-gcc load.c $CFLAGS -o ../load
+INTERFACES=$(ls ../interfaces-linux-x64/*.o)
+
+gcc load.c $CFLAGS $INTERFACES -o ../load

@@ -1,3 +1,4 @@
+typedef unsigned char uint8;
 typedef unsigned long long uint64;
 
 typedef void* REQUIRE(char* name);

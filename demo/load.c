@@ -1,5 +1,9 @@
 #include <icicle.h>
+#include <logger.h>
 
 int load(REQUIRE require){
-    require("hello world");
+    LOGGER logger;
+    if (logger = require("logger")){
+        logger->log("hello log");
+    }
 }
