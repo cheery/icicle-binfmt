@@ -13,3 +13,21 @@ have designed. Later anyone can download anyone other's program and get it work
 on their platform directly with no dependency- or software-originated compatibility issues.
 
 Well.. that's the plan. Please submit some issues or patches.
+
+To give an idea about, I added the first interface. Logger is used for logging.
+
+LOGGER:
+    void log(uint8* text);
+    void logerror(uint8* text);
+
+It is obvious what it does. Here's the code that calls it:
+
+    #include <icicle.h>
+    #include <logger.h>
+
+    int load(REQUIRE require){
+        LOGGER logger;
+        if (!(logger = require("logger"))) return 1;
+        logger->log("hello log");
+        return 0;
+    }
